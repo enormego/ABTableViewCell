@@ -31,11 +31,11 @@
 
 // to use: subclass ABTableViewCell and implement -drawContentView:
 
-@interface ABTableViewCell : UITableViewCell
-{
-	UIView *contentView;
+@interface ABTableViewCell : UITableViewCell {
+	UIView* contentView;
+	UIView* selectedContentView;
 }
 
-- (void)drawContentView:(CGRect)r; // subclasses should implement
+- (void)drawContentView:(CGRect)rect highlighted:(BOOL)highlighted; // subclasses should implement
 
 @end
